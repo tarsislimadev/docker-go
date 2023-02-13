@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  latest:
+    image: tmvdl/go:latest
+    build: './src/latest'
+
+  alpine:
+    image: tmvdl/go:alpine
+    build: './src/alpine'
