@@ -33,3 +33,7 @@ services:
   echo:
     image: tmvdl/go:echo
     build: './src/echo'
+
+  fiber:
+    image: tmvdl/go:fiber
+    build: './src/fiber'
