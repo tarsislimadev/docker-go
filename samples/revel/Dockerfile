@@ -1,4 +1,4 @@
-FROM tmvdl/go:latest
+FROM tmvdl/go:revel
 
 RUN go install github.com/revel/cmd/revel@latest
 
