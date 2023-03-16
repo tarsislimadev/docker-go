@@ -3,37 +3,37 @@ version: '3'
 services:
 
   latest:
-    image: tmvdl/go:latest
+    image: 'tmvdl/go:latest'
     build: './src/latest'
 
   alpine:
-    image: tmvdl/go:alpine
+    image: 'tmvdl/go:alpine'
     build: './src/alpine'
 
   revel:
-    image: tmvdl/go:revel
+    image: 'tmvdl/go:revel'
     build: './src/revel'
 
   buffalo:
-    image: tmvdl/go:buffalo
+    image: 'tmvdl/go:buffalo'
     build: './src/buffalo'
 
-  gin:
-    image: tmvdl/go:gin
-    build: './src/gin'
+  # gin:
+  #   image: 'tmvdl/go:gin'
+  #   build: './src/gin'
 
   beego:
-    image: tmvdl/go:beego
+    image: 'tmvdl/go:beego'
     build: './src/beego'
 
   iris:
-    image: tmvdl/go:iris
+    image: 'tmvdl/go:iris'
     build: './src/iris'
 
   echo:
-    image: tmvdl/go:echo
+    image: 'tmvdl/go:echo'
     build: './src/echo'
 
   fiber:
-    image: tmvdl/go:fiber
+    image: 'tmvdl/go:fiber'
     build: './src/fiber'
