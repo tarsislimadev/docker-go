@@ -1,3 +1,11 @@
-FROM golang:1.20
+FROM gobuffalo/buffalo:v0.18.14
 
-RUN go install github.com/gobuffalo/cli/cmd/buffalo@latest
+WORKDIR /src/go/buffalo
+
+ENV GO_ENV production
+
+ENV ADDR 0.0.0.0
+
+ENV PORT 80
+
+ENTRYPOINT buffalo dev
