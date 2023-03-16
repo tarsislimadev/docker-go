@@ -9,3 +9,7 @@ services:
   alpine:
     image: tmvdl/go:alpine
     build: './src/alpine'
+
+  revel:
+    image: tmvdl/go:revel
+    build: './src/revel'
