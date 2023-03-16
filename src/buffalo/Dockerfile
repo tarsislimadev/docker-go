@@ -1,8 +1,8 @@
 FROM golang:1.20
 
-RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
+WORKDIR /go/src/app
 
-WORKDIR /src/go/buffalo
+RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
 
 ENV GO_ENV production
 
