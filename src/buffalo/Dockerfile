@@ -1,4 +1,6 @@
-FROM gobuffalo/buffalo:v0.18.14
+FROM golang:1.20
+
+RUN go get github.com/gobuffalo/buffalo@latest
 
 WORKDIR /src/go/buffalo
 
