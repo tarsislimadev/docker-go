@@ -1,5 +1,7 @@
 FROM tmvdl/go:buffalo
 
-COPY . /go/src/buffalo
+COPY . .
 
-# ENTRYPOINT revel run -p 80 -a /go/src/revel -m prod 
+RUN npm install
+
+RUN go mod download
