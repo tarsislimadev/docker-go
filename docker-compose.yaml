@@ -18,17 +18,15 @@ services:
     image: 'tmvdl/go:buffalo'
     build: './src/buffalo'
 
-  # gin:
-  #   image: 'tmvdl/go:gin'
-  #   build: './src/gin'
+  gin:
+    image: 'tmvdl/go:gin'
+    build: './src/gin'
 
   # beego:
   #   image: 'tmvdl/go:beego'
   #   build: './src/beego'
 
-  iris:
-    image: 'tmvdl/go:iris'
-    build: './src/iris'
+
 
   echo:
     image: 'tmvdl/go:echo'
