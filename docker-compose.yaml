@@ -13,3 +13,7 @@ services:
   revel:
     image: tmvdl/go:revel
     build: './src/revel'
+
+  buffalo:
+    image: tmvdl/go:buffalo
+    build: './src/buffalo'
