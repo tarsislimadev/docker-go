@@ -26,8 +26,6 @@ services:
   #   image: 'tmvdl/go:beego'
   #   build: './src/beego'
 
-
-
   echo:
     image: 'tmvdl/go:echo'
     build: './src/echo'
