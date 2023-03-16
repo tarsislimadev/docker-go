@@ -1,3 +1,3 @@
 FROM golang:1.20
 
-RUN go get github.com/beego/beego/v2@latest
+RUN go install github.com/beego/beego/v2@latest
