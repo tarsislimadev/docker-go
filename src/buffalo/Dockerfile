@@ -1,6 +1,6 @@
 FROM golang:1.20
 
-RUN go get github.com/gobuffalo/buffalo@latest
+RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
 
 WORKDIR /src/go/buffalo
 
