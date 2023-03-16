@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  revel:
+    build: './samples/revel'
+    volumes:
+      - './samples/revel:/go/src/revel'
