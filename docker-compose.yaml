@@ -22,9 +22,9 @@ services:
     image: 'tmvdl/go:gin'
     build: './src/gin'
 
-  # beego:
-  #   image: 'tmvdl/go:beego'
-  #   build: './src/beego'
+  beego:
+    image: 'tmvdl/go:beego'
+    build: './src/beego'
 
   echo:
     image: 'tmvdl/go:echo'

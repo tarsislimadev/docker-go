@@ -2,6 +2,10 @@ FROM golang:1.20
 
 WORKDIR /go/src/app
 
+RUN go mod init app
+
+RUN go mod tidy
+
 RUN go install -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@v0.18.14
 
 ENV GO_ENV production
